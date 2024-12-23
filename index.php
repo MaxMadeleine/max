@@ -1,12 +1,11 @@
-<style>
-    body{
-        background-color: black;
-        color: white;
-    }
-</style>
 <?php
-$emy = "emanuel ";
-$age = $_GET["age"] + 34;
 
-echo $emy . "is gay and " . $age . " years old";
+include "style.php";
+
+$page = $_GET["page"];
+
+include "header1.php";
+
+echo $page;
+
 ?>
