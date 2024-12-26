@@ -1,11 +1,6 @@
 <?php
-
-include "style.php";
-
-$page = $_GET["page"];
-
-include "header1.php";
-
-echo $page;
-
-?>
+if($_GET["n1"] + $_GET["n2"] == "420")
+{echo "smoke weed"; }
+else{
+echo "wow let emanuel tell you what you did wrong =D";
+}
