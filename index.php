@@ -18,14 +18,7 @@ elseif($_GET["action"] == "div"){
 }
 ?>
 
-
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-
-
+<link rel="stylesheet" href="style.css">
 <body >
   <form action="/" method="GET">
     <input type="text" name="n1" value="<?php echo $n1; ?>" >
@@ -36,7 +29,7 @@ elseif($_GET["action"] == "div"){
   </form>
   <?php echo $echo; ?>
   </body>
-</html>
+
 
 
 
