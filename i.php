@@ -19,4 +19,5 @@ if ($action == "before") {
 
 }
 ?>
-<h1><?php echo $variable ?></h1>
+<h1><?php echo $variable ?></h1>php
+phpphpphp
