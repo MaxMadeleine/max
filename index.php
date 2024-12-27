@@ -1,29 +1,44 @@
 <?php
-
 $n1 = $_GET["n1"];
 $n2 = $_GET["n2"];
 $action = $_GET["action"];
 $echo;
 
-if( empty($n1) || empty($n2)){
-  return;
+if($_GET["action"] == "plus"){
+  $echo = $_GET["n1"] + $_GET["n2"];
 }
-
-if( $action == "plus" ){
-  $echo = $n1 . " + " . $n2 . " = " . $n1 + $n2;
+elseif($_GET["action"] == "minus"){
+  $echo = $_GET["n1"] - $_GET["n2"];
 }
-elseif( $action == "minus" ){
-  $echo = $n1 - $n2;
+elseif($_GET["action"] == "add"){
+  $echo = $_GET["n1"] * $_GET["n2"];
 }
-elseif( $action == "div" ){
-  $echo = $n1 / $n2;
+elseif($_GET["action"] == "div"){
+  $echo = $_GET["n1"] / $_GET["n2"];
 }
-elseif( $action == "add" ){
-  $echo = $n1 * $n2;
-}
-else {echo "error";}
 ?>
 
-<html>
-    <h1> <?php echo $echo;  ?></h1>
+
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body >
+  <form action="/" method="GET">
+    <input type="text" name="n1" value="<?php echo $n1; ?>" >
+    <p>Chose: plus, minus, div, add</p>
+    <input type="text" name="action" value="<?php echo $action; ?>" >
+    <input type="text" name="n2" value="<?php echo $n2; ?>"  >
+    <input type="submit" value="Submit">
+  </form>
+  <?php echo $echo; ?>
+  </body>
 </html>
+
+
+
+
+
