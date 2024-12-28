@@ -1,4 +1,3 @@
-<!-- howcome i cant echo $echo -->
  <!-- and howcome i cant set values to $_POST["n2"]; without logging in the browser  -->
   <!-- and why does it reload url istead of staying on the site -->
    <!-- anwser post is a pain in the asshole and dosent work with that kind of calculater  -->
@@ -30,7 +29,7 @@ elseif($_POST["action"] == "div"){
     <input type="text" name="n1"  >
     <p>Chose: plus, minus, div, add</p>
     <input type="text" name="action"  >
-    <input type="text" name="n2"  >
+    <input type="text" name="n2" value="<?php echo $_POST["n2"]; ?>" >
     <input type="submit" value="Submit">
   </form>
   <?php echo $echo; ?>
