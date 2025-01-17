@@ -1,1 +1,0 @@
-<h1><?php echo $title; ?> - Max</h1>
