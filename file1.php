@@ -1,14 +1,25 @@
 <?php
 class Max
 {
-    public function getMax()
-    {
-        $age = self::getMaxAge();
+    private $age;
 
-        return "Hi Max is $age years old!";
+    public $name = "Max";
+
+    public function __construct()
+    {
+        $this->age = self::getMaxAge();
     }
 
-    private function getMaxAge(){
+    public function getMax()
+    {
+        $agee = $this->age;
+        $namee = $this->name;
+
+        return "Hi $namee is $agee years old!";
+    }
+
+    private function getMaxAge()
+    {
         return 20;
     }
 }

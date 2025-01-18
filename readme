@@ -1,0 +1,10 @@
+HOMEWORK
+========
+
+Make a class that has:
+- a constructor
+- two private fns
+- two public fns
+- two private class level vars
+- two public class level vars
+- also use a GET global var for som efckn reason
